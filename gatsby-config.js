@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Suddjian, the Blog`,
+    title: `Bloggjian`,
     author: `David Aaron Suddjian`,
     description: `Thoughts on programming, relationships, and life`,
     siteUrl: `https://blog.suddjian.com`,
