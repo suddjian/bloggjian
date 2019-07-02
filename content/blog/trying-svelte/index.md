@@ -1,7 +1,7 @@
 ---
 title: "Svelte, a new paradigm?"
 date: "2019-06-30T04:01:28Z"
-description: "An exploration of Svelte and hope for frontend development"
+description: "Exploring the Svelte framework and finding hope for frontend development"
 ---
 
 The [Svelte](https://svelte.dev/) framework is like balm for my front-end-dev wounds.
