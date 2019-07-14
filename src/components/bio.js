@@ -48,6 +48,7 @@ const Bio = () => {
           marginBottom: 0,
           minWidth: 50,
           borderRadius: `100%`,
+          border: `1px solid rgba(0, 0, 100, 0.5)`,
         }}
         imgStyle={{
           borderRadius: `50%`,
