@@ -32,12 +32,12 @@ const Bio = () => {
     }
   `)
 
-  const { author, social } = data.site.siteMetadata
+  const { author, authorEmail } = data.site.siteMetadata
   return (
     <div
       style={{
         display: `flex`,
-        marginBottom: rhythm(2.5),
+        marginBottom: rhythm(1),
       }}
     >
       <Image
@@ -57,7 +57,7 @@ const Bio = () => {
       <p>
         Written by <strong>{author}</strong>, a SF Bay Area programmer building useful things for money and useless things for fun.
         <br />
-        Currently <a href="mailto:aaron@suddjian.com">looking for work</a> at an awesome company!
+        Currently <a href={`mailto:${authorEmail}`}>looking for work</a> at an awesome company!
       </p>
     </div>
   )

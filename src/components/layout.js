@@ -12,14 +12,14 @@ class Layout extends React.Component {
     if (location.pathname === rootPath) {
       header = (
         <nav>
-          <a
-            style={{
-              boxShadow: `none`,
-            }}
-            href={"https://suddjian.com"}
-          >
-              {"<- suddjian.com"}
-          </a>
+          <div style={{ marginBottom: `1rem` }}>
+            <a
+              className={`invert-line subtle`}
+              href={`https://suddjian.com`}
+            >
+              {`← suddjian.com`}
+            </a>
+          </div>
           <h1
             style={{
               ...scale(1.5),
@@ -28,12 +28,7 @@ class Layout extends React.Component {
             }}
           >
             <Link
-              style={{
-                boxShadow: `none`,
-                textShadow: `none`,
-                textDecoration: `none`,
-                color: `inherit`,
-              }}
+              className={`invert-line subtle`}
               to={`/`}
             >
               {title}
@@ -50,11 +45,7 @@ class Layout extends React.Component {
           }}
         >
           <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
+            className={`invert-line subtle`}
             to={`/`}
           >
             {title}
