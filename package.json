@@ -4,6 +4,9 @@
   "description": "Aaron Suddjian's blog",
   "version": "0.1.0",
   "author": "David Aaron Suddjian <aaron@suddjian.com>",
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
   "dependencies": {
     "gatsby": "^2.10.0",
     "gatsby-image": "^2.2.1",
