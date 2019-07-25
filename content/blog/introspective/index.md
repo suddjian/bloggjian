@@ -20,17 +20,17 @@ We walk oblivious, time's whisper at our backs
 
 <br>
 
+Stop and be viscerally aware of your being and doing and thinking
+
+The knife edge where your thoughts end and you begin
+
+<br>
+
 We pretend that we exist for reasons
 
 We pretend that we exist for no reason
 
 And we cope by saying *"someday maybe"*
-
-<br>
-
-Stop and be viscerally aware of your being and doing and thinking
-
-The knife edge where your thoughts end and you begin
 
 <br>
 
