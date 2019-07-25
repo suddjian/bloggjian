@@ -1,5 +1,5 @@
 ---
-title: "Introspective"
+title: "How to solve a paradox in 6 easy steps"
 date: "2019-07-25T17:30:00.000Z"
 description: "Pretentious freeform existential rambling & reflection"
 ---
