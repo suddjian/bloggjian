@@ -30,7 +30,7 @@ And we cope by saying *"someday maybe"*
 
 Stop and be viscerally aware of your being and doing and thinking
 
-Where do your thoughts end and you begin
+The knife edge where your thoughts end and you begin
 
 <br>
 
