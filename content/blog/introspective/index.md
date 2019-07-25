@@ -36,7 +36,7 @@ Where do your thoughts end and you begin
 
 We naively hope to break the surface of this great cosmic sea of *yes*
 
-To see beneath the roiling paradoxical conscious foam
+To see beneath the roiling conscious foam
 
 Our only tools, impossibly small poorly formed questions
 
