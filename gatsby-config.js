@@ -67,6 +67,7 @@ module.exports = {
         icon: `content/assets/blog-icon.png`,
       },
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
