@@ -12,7 +12,7 @@ Pretending that we know what we are and where we're going
 
 <br>
 
-We should all go mad grasping at straws of meaning
+We should all go mad grasping at meaning
 
 Instead we choose to live a great collective white lie
 
