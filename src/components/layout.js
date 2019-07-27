@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
+import Grain from './grain'
 
 class Layout extends React.Component {
   render() {
@@ -67,6 +68,7 @@ class Layout extends React.Component {
         <footer>
           © {new Date().getFullYear()}
         </footer>
+        <Grain />
       </div>
     )
   }
