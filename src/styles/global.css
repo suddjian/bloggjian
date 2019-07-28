@@ -4,8 +4,7 @@ html {
 
 body {
   min-height: 100vh;
-  /* background: #0029FA; */
-  background: #000428;  /* fallback for old browsers */
+  background: #06186f;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top left, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #ece8e1;
@@ -16,20 +15,20 @@ a {
   color: #f57348;
   text-shadow: 1px 1px rgba(0, 0, 200, 0.3);
   box-shadow: none;
-  text-decoration: underline;
-}
-
-a:hover, a:active {
   text-decoration: none;
 }
 
-a.invert-line {
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+/* a.invert-line {
   text-decoration: none;
 }
 
 a.invert-line:hover, a.invert-line:active {
   text-decoration: underline;
-}
+} */
 
 a.subtle {
   color: inherit;
