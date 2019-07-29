@@ -29,14 +29,14 @@ But I like being a denizen of the internet. I just want it to be a more adventur
 Do you remember the early days of the internet, following *[links](https://indieweb.org/)* crafted by humans leading to new places you hadn't seen before?
 You might find yourself reading about elephants, and encounter a link to the blog of an elephant researcher,
 who also has a passion for film, and then discover a bunch of movies that they spent time writing reviews for,
-because they want to share their passion with the world.
+just because they want to share their passion with the world.
 It was an adventurous and exploratory process, requiring active engagement and rewarding with new discoveries.
 
-People -- and their websites -- can be multidimensional and unique.
+People -- and their web presence -- can be multidimensional and unique.
 When you find a link on the web, it should mean that someone cared enough to link two things together.
 Not that a soulless box decided you should see it based on the viewing habits of a thousand people you will never know.
 Here's an idea: Instead of giving so much authority to the opinions of a machine,
 I'm going to trust my own curiosity to lead me on interesting adventures.
 
-That's why this blog is not a portfolio of my work, or a promotional stunt to increase my professional standing.
-It's just a place where I put stuff. It feels pretty good to be free from someone else's vision.
+That's why this website is not a portfolio of my work, or a promotional stunt to increase my professional standing.
+It's just a place where I put stuff. It feels pretty good to be free from someone else's idea of what I should be.
