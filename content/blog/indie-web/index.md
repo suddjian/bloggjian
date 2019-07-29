@@ -32,7 +32,7 @@ who also has a passion for film, and then discover a bunch of movies that they s
 just because they want to share their passion with the world.
 It was an adventurous and exploratory process, requiring active engagement and rewarding with new discoveries.
 
-People -- and their web presence -- can be multidimensional and unique.
+People could make their web presence multidimensional and unique.
 When you find a link on the web, it should mean that someone cared enough to link two things together.
 Not that a soulless box decided you should see it based on the viewing habits of a thousand people you will never know.
 Here's an idea: Instead of giving so much authority to the opinions of a machine,
