@@ -46,7 +46,6 @@ class Layout extends React.Component {
           }}
         >
           <Link
-            className={`invert-line subtle`}
             to={`/`}
           >
             {title}
