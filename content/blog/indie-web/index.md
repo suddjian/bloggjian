@@ -6,7 +6,7 @@ description: "Corporate walled-garden content silos are really pretty boring"
 
 I've always spent a lot of my time on the internet.
 In more recent years, my time has increasingly been spent on huge web platforms
-designed for consuming and creating content, and interact with other people.
+designed for consuming and creating content, and interacting with other people.
 Facebook, YouTube, Reddit, Twitter, etc, which I call the "Corporate Web".
 
 Corporate Web platforms have a vast userbase due to their status as a hub for internet interaction.

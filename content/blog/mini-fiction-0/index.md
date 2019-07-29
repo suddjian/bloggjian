@@ -16,7 +16,7 @@ What is the nature of consciousness?
 
 What will happen if we encounter beings of infinitely greater cognition than ourselves?
 
-The Cortex team stood staring with bated breath,while the scientist tapped the last few keys and the program came online.
+The Cortex team stood staring with bated breath, while the scientist tapped the last few keys and the program came online.
 
 "Hello" It said.
 
