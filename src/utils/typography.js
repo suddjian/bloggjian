@@ -1,7 +1,7 @@
 import Typography from "typography"
-import Wordpress2016 from "typography-theme-wordpress-2016"
+import theme from "typography-theme-wordpress-2016"
 
-Wordpress2016.overrideThemeStyles = () => {
+theme.overrideThemeStyles = () => {
   return {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
@@ -9,9 +9,23 @@ Wordpress2016.overrideThemeStyles = () => {
   }
 }
 
-delete Wordpress2016.googleFonts
+theme.googleFonts = [
+  {
+    name: 'IBM Plex Sans',
+    styles: [
+      '400',
+      '400i',
+      '700',
+      '700i',
+    ],
+  },
+]
 
-const typography = new Typography(Wordpress2016)
+theme.headerFontFamily = ['Montserrat', 'georgia', 'serif']
+theme.headerWeight = 800
+theme.bodyFontFamily = ['IBM Plex Sans', 'georgia', 'serif']
+
+const typography = new Typography(theme)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {
