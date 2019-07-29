@@ -13,4 +13,4 @@ I'm not sure what this blog will end up becoming, but right now I'm thinking of 
 where I can explore my weird brain and bare my soul a bit.
 
 By the way, Gatsby is great! I set this thing up in less than an hour,
-it was super fast and I have complete control over my site.
+it was super fast and provides lots of fun tools that I can use to tweak my site and add features.
