@@ -4,7 +4,7 @@ import theme from "typography-theme-wordpress-2016"
 theme.overrideThemeStyles = () => {
   return {
     "*:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6)>a": {
-      fontWeight: 600,
+      fontWeight: 500,
     },
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
@@ -18,6 +18,8 @@ theme.googleFonts = [
     styles: [
       '400',
       '400i',
+      '500',
+      '500i',
       '600',
       '600i',
       '700',
