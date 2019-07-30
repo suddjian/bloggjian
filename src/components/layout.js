@@ -1,8 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "@emotion/styled"
 
 import { rhythm, scale } from "../utils/typography"
-import Grain from './grain'
+import Grain from "./grain"
+
+const Footer = styled.footer`
+  opacity: 0.5;
+  margin-top: ${rhythm(2)};
+`
 
 class Layout extends React.Component {
   render() {
@@ -65,9 +71,9 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer>
+        <Footer>
           © {new Date().getFullYear()}
-        </footer>
+        </Footer>
         <Grain />
       </div>
     )
