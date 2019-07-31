@@ -57,7 +57,7 @@ const Bio = () => {
         }}
       />
       <p>
-        Personal blog of <strong>{author}</strong>: a programmer from Santa Cruz building useful things for money and useless things for fun.
+        Personal blog of <strong>{author}</strong>, a programmer from Santa Cruz building useful things for money and useless things for fun.
         <br />
         Currently <a href={`mailto:${authorEmail}`}>looking for work</a> at an awesome company!
       </p>
