@@ -28,7 +28,7 @@ theme.googleFonts = [
   },
 ]
 
-theme.baseFontSize = '18px'
+theme.baseFontSize = '17px'
 theme.headerFontFamily = ['Montserrat', 'georgia', 'serif']
 theme.headerWeight = 800
 theme.bodyFontFamily = ['IBM Plex Sans', 'georgia', 'serif']

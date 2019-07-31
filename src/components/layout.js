@@ -10,6 +10,12 @@ const Footer = styled.footer`
   margin-top: ${rhythm(2)};
 `
 
+const Banner = styled.h1`
+  @media(min-width: 500px) {
+    ${scale(1.5)}
+  }
+`
+
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
@@ -21,27 +27,27 @@ class Layout extends React.Component {
         <nav>
           <div style={{ marginBottom: `1rem` }}>
             <a
-              className={`invert-line subtle`}
+              className={`subtle`}
               href={`https://suddjian.com`}
             >
               {`← suddjian.com`}
             </a>
           </div>
-          <h1
+          <Banner
             style={{
-              ...scale(1.5),
+              // ...scale(1.5),
               marginBottom: rhythm(1.5),
               marginTop: 0,
               fontWeight: 900,
             }}
           >
             <Link
-              className={`invert-line subtle`}
+              className={`subtle`}
               to={`/`}
             >
               {title}
             </Link>
-          </h1>
+          </Banner>
         </nav>
       )
     } else {
