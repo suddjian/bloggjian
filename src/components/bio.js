@@ -33,7 +33,7 @@ const Bio = () => {
     }
   `)
 
-  const { author, authorEmail } = data.site.siteMetadata
+  const { author } = data.site.siteMetadata
   return (
     <div
       style={{
@@ -57,7 +57,8 @@ const Bio = () => {
         }}
       />
       <p>
-        Personal blog of <strong>{author}</strong>, a programmer from Santa Cruz building useful things for money and useless things for fun.
+        Personal blog of <strong>{author}</strong>, a programmer from Santa Cruz building useful things for money,
+        and building useless things just to make the cathode ray tube resonate.
       </p>
     </div>
   )
