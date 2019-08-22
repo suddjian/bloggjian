@@ -24,6 +24,8 @@ _You may want to check out our vibrant collection of [official and community-cre
 
 - The old Japanese bedridden lady
 
+- It's easier to work with it than against it
+
 ## 🚀 Quick start
 
 Navigate into the site’s directory and start it up.
