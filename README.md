@@ -20,6 +20,8 @@ _You may want to check out our vibrant collection of [official and community-cre
 
 - Software as an artistic medium (and how to realize art at work)
 
+- Every habit is a choice
+
 ## 🚀 Quick start
 
 Navigate into the site’s directory and start it up.
