@@ -12,7 +12,7 @@ _You may want to check out our vibrant collection of [official and community-cre
 
 - Cryptographic secret recovery via partially trusted parties
 
-- A short story narrating a creature transporting its young to a safe - but barren - place, then sacrifices itself to feed them
+- A short story narrating a creature transporting its young to a safe - but barren - place, then sacrificing itself to feed them
 
 - That shadertoy ripple effect that I made
 
