@@ -2,7 +2,7 @@ This project uses [gatsby](https://www.gatsbyjs.org).
 
 _You may want to check out Gatsby's vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
-## Blog Post Ideas
+## 💡 Blog Post Ideas
 
 - Toxic Positivity
 
