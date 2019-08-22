@@ -20,7 +20,7 @@ _You may want to check out our vibrant collection of [official and community-cre
 
 - Software as an artistic medium (and how to realize art at work)
 
-- Every ~habit~ moment is a choice
+- Every moment is a choice
 
 - The old Japanese bedridden lady
 
