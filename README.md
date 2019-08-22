@@ -22,6 +22,8 @@ _You may want to check out our vibrant collection of [official and community-cre
 
 - Every ~habit~ moment is a choice
 
+- The old Japanese bedridden lady
+
 ## 🚀 Quick start
 
 Navigate into the site’s directory and start it up.
