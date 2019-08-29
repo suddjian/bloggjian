@@ -32,6 +32,8 @@ _You may want to check out Gatsby's vibrant collection of [official and communit
 
 - Menlo Park's shitty overnight parking rules
 
+- We are just animals that can communicate
+
 ## 🚀 Quick start
 
 Navigate into the site’s directory and start it up.
