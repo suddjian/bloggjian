@@ -12,7 +12,7 @@ _You may want to check out Gatsby's vibrant collection of [official and communit
 
 - Cryptographic secret recovery via partially trusted parties
 
-- A short story narrating a creature transporting its young to a safe - but barren - place, then sacrificing itself to feed them
+- A short story narrating a creature transporting its young to a safe - but barren - place, then sacrificing itself as food for them
 
 - That shadertoy ripple effect that I made
 
