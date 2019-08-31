@@ -42,7 +42,7 @@ _You may want to check out Gatsby's vibrant collection of [official and communit
 
 - The almost perverse devotion I often have to programming, often driven by reading the tech legends
 
-- The benefits of indulging in nerdiness
+- The benefits of indulging heartily in nerdiness
 
 ## 🚀 Quick start
 
