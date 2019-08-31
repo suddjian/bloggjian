@@ -36,6 +36,8 @@ _You may want to check out Gatsby's vibrant collection of [official and communit
 
 - Filling the church community void as an atheist
 
+- I don't believe in deleting information
+
 ## 🚀 Quick start
 
 Navigate into the site’s directory and start it up.
