@@ -40,6 +40,10 @@ _You may want to check out Gatsby's vibrant collection of [official and communit
 
 - Every story is the author
 
+- The almost perverse devotion I often have to programming, often driven by reading the tech legends
+
+- The benefits of indulging in nerdiness
+
 ## 🚀 Quick start
 
 Navigate into the site’s directory and start it up.
