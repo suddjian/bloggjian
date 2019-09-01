@@ -4,7 +4,7 @@ date: "2019-08-27T12:30:00.000Z"
 description: "This is it I can feel it"
 ---
 
-After a vigorous three months of job searching I recently became Emplyee #6 at (Preset)[https://preset.io/]! We're a friendly bunch of nerds building sweet data visualization tools (and of course we're [hiring](https://preset.io/careers/) `/plug`).
+After a vigorous three months of job searching I recently became Emplyee #6 at [Preset](https://preset.io/)! We're a friendly bunch of nerds building sweet data visualization tools (and of course we're [hiring](https://preset.io/careers/) `/plug`).
 
 In the end my job search landed me in the very lucky position of having several exciting companies interested in hiring me. Being me, I ended up agonizing over making the best possible decision. I spent a lot of time soul-searching -- though really, I can't help doing that anyway.
 
