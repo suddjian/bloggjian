@@ -20,7 +20,7 @@ _You may want to check out Gatsby's vibrant collection of [official and communit
 
 - Software as an artistic medium (and how to realize art at work)
 
-- Every moment is a choice
+- ~Every moment is a choice~
 
 - The old Japanese bedridden lady
 
