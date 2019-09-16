@@ -46,6 +46,8 @@ _You may want to check out Gatsby's vibrant collection of [official and communit
 
 - The benefits of indulging heartily in nerdiness
 
+- Working on open-source for free is usually not the best way to spend your time
+
 ## 🚀 Quick start
 
 Navigate into the site’s directory and start it up.
