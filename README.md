@@ -10,7 +10,7 @@ _You may want to check out Gatsby's vibrant collection of [official and communit
 
 - How to write good pull requests
 
-- Started working at Preset
+- ~Started working at Preset~
 
 - Cryptographic secret recovery via partially trusted parties
 
@@ -42,7 +42,7 @@ _You may want to check out Gatsby's vibrant collection of [official and communit
 
 - Every story is the author
 
-- The almost perverse devotion I often have to programming, often driven by reading the tech legends
+- ~The almost perverse devotion I often have to programming, often driven by reading the tech legends~
 
 - The benefits of indulging heartily in nerdiness
 
