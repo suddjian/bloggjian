@@ -5,7 +5,7 @@ description: "The challenges of trying to accomplish anything with perfectionist
 tags: "life,work,reflection"
 ---
 
-I often have trouble getting it done.
+I often have trouble getting things done.
 
 This is really embarrassing for me, because I love to learn and do all kinds of creative things.
 
