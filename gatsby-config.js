@@ -1,7 +1,9 @@
+const BLOG_TITLE = `Personal Blog of David Aaron Suddjian`
+
 module.exports = {
   siteMetadata: {
     name: `Bloggjian`,
-    title: `David Aaron Suddjian Blog`,
+    title: BLOG_TITLE,
     author: `David Aaron Suddjian`,
     authorEmail: `aaron@suddjian.com`,
     description: `Thoughts on programming, relationships, and life`,
@@ -56,12 +58,69 @@ module.exports = {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
-    `gatsby-plugin-feed`,
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                name
+                title
+                author
+                authorEmail
+                description
+                siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.frontmatter.description || edge.node.exerpt,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  custom_elements: [{ "content:encoded": edge.node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  edges {
+                    node {
+                      id
+                      html
+                      fields { slug }
+                      exerpt
+                      frontmatter {
+                        title
+                        date
+                        description
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/rss.xml",
+            title: BLOG_TITLE,
+          },
+        ],
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Suddjian Blog`,
-        short_name: `Suddjian Blog`,
+        name: `Bloggjian`,
+        short_name: `Bloggjian`,
+        title: BLOG_TITLE,
         start_url: `/`,
         background_color: `#06186f`,
         theme_color: `#06186f`,
