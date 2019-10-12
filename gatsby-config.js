@@ -98,7 +98,7 @@ module.exports = {
                       id
                       html
                       fields { slug }
-                      exerpt
+                      excerpt
                       frontmatter {
                         title
                         date
