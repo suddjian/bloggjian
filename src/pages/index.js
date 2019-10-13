@@ -25,7 +25,7 @@ class BlogIndex extends React.Component {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link className={`invert-line`} to={node.fields.slug}>
+                <Link to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>

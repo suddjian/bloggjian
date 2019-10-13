@@ -15,20 +15,12 @@ a {
   color: #f35a37;
   text-shadow: 1px 1px rgba(0, 0, 200, 0.3);
   box-shadow: none;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover, a:active {
-  text-decoration: underline;
-}
-
-/* a.invert-line {
   text-decoration: none;
 }
-
-a.invert-line:hover, a.invert-line:active {
-  text-decoration: underline;
-} */
 
 a.subtle {
   color: inherit;

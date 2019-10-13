@@ -4,6 +4,7 @@ import styled from "@emotion/styled"
 
 import { rhythm, scale } from "../utils/typography"
 import Grain from "./grain"
+import { LeftArrow } from "./decorations"
 
 const Footer = styled.footer`
   opacity: 0.5;
@@ -27,9 +28,9 @@ class Layout extends React.Component {
         <nav>
           <div style={{ marginBottom: `1rem` }}>
             <a className="subtle" href="https://suddjian.com">
-              ← suddjian.com
+              <LeftArrow />suddjian.com
             </a>
-            <a href="/rss.xml" style={{ float: "right" }}>rss</a>
+            <a href="/rss.xml" className="subtle" style={{ float: "right" }}>rss</a>
           </div>
           <Banner
             style={{
@@ -39,12 +40,7 @@ class Layout extends React.Component {
               fontWeight: 900,
             }}
           >
-            <Link
-              className={`subtle`}
-              to={`/`}
-            >
-              {title}
-            </Link>
+            {title}
           </Banner>
         </nav>
       )
