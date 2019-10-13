@@ -26,12 +26,10 @@ class Layout extends React.Component {
       header = (
         <nav>
           <div style={{ marginBottom: `1rem` }}>
-            <a
-              className={`subtle`}
-              href={`https://suddjian.com`}
-            >
-              {`← suddjian.com`}
+            <a className="subtle" href="https://suddjian.com">
+              ← suddjian.com
             </a>
+            <a href="/rss.xml" style={{ float: "right" }}>rss</a>
           </div>
           <Banner
             style={{
