@@ -7,7 +7,7 @@ import Grain from "./grain"
 import { LeftArrow } from "./decorations"
 
 const Footer = styled.footer`
-  opacity: 0.5;
+  opacity: 0.6;
   margin-top: ${rhythm(2)};
 `
 

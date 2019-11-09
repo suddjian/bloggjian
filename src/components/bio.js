@@ -57,7 +57,7 @@ const Bio = () => {
         }}
       />
       <p>
-        Personal blog of <strong>{author}</strong>, a professional web nerd from Santa Cruz building useful things for money and useless things for fun.
+        Personal blog of <a href="mailto:aaron@suddjian.com">{author}</a>, a professional web nerd from Santa Cruz building useful things for money and useless things for fun.
       </p>
     </div>
   )

@@ -1,10 +1,23 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import styled from '@emotion/styled'
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import { rhythm, scale } from "../utils/typography"
+
+const Small = styled.small`
+  font-size: 0.8rem;
+  opacity: 0.6;
+  font-weight: 400;
+`
+
+const BlogItem = styled.h3`
+  margin-top: ${rhythm(1)};
+  margin-bottom: ${rhythm(1)};
+  ${scale(0.1)}
+`
 
 class BlogIndex extends React.Component {
   render() {
@@ -19,22 +32,14 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link to={node.fields.slug}>
+            <div key={node.fields.slug} style={{ marginBottom: '1em' }}>
+              <BlogItem>
+                <Small>{node.frontmatter.date}</Small>
+                <br />
+                <Link style={{ }} to={node.fields.slug}>
                   {title}
                 </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
+              </BlogItem>
             </div>
           )
         })}

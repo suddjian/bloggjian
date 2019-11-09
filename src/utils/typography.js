@@ -1,14 +1,18 @@
 import Typography from "typography"
 import theme from "typography-theme-wordpress-2016"
 
-theme.overrideThemeStyles = () => {
+theme.overrideThemeStyles = ({ rhythm }) => {
   return {
     "*:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6)>a": {
+      // bold all links except headers
       fontWeight: 500,
     },
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
+    "h3": {
+      marginTop: rhythm(-1),
+    }
   }
 }
 
@@ -28,9 +32,9 @@ theme.googleFonts = [
   },
 ]
 
-theme.baseFontSize = '17px'
+theme.baseFontSize = '16px'
 theme.headerFontFamily = ['Montserrat', 'georgia', 'serif']
-theme.headerWeight = 800
+theme.headerWeight = 700
 theme.bodyFontFamily = ['IBM Plex Sans', 'georgia', 'serif']
 
 const typography = new Typography(theme)
