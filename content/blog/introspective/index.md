@@ -1,6 +1,6 @@
 ---
 title: "How to solve a paradox"
-date: "2019-07-25T17:30:00.000Z"
+date: "2019-07-25"
 description: "Pretentious freeform existential rambling & reflection"
 ---
 

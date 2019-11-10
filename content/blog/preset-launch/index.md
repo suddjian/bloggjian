@@ -1,6 +1,6 @@
 ---
 title: "Launching Preset"
-date: "2019-10-10T15:20:00.000Z"
+date: "2019-10-10"
 description: "It's happening!!"
 ---
 

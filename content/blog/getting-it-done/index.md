@@ -1,6 +1,6 @@
 ---
 title: "Getting it Done"
-date: "2019-09-09T19:20:00.000Z"
+date: "2019-09-09"
 description: "The challenges of trying to accomplish anything with perfectionist paralysis"
 tags: "life,work,reflection"
 ---

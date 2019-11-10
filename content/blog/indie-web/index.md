@@ -1,6 +1,6 @@
 ---
 title: "The Indie Web"
-date: "2019-07-28T16:00:00.000Z"
+date: "2019-07-28"
 description: "Corporate walled-garden content silos are really pretty boring"
 ---
 

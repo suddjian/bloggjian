@@ -1,6 +1,6 @@
 ---
 title: Micro-Sci-Fi
-date: "2019-05-21T12:30:00.000Z"
+date: "2019-05-21"
 description: "In which I try my hand at a bit of sci-fi writing"
 ---
 

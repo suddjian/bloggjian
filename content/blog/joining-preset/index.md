@@ -1,6 +1,6 @@
 ---
 title: "Joining Preset!"
-date: "2019-08-27T12:30:00.000Z"
+date: "2019-08-27"
 description: "This is it I can feel it"
 ---
 

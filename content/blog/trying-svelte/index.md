@@ -1,6 +1,6 @@
 ---
 title: "Svelte, a new paradigm?"
-date: "2019-06-30T04:01:28Z"
+date: "2019-06-30"
 description: "Exploring the Svelte framework and finding hope for frontend development"
 ---
 
