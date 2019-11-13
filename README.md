@@ -6,7 +6,7 @@ _You may want to check out Gatsby's vibrant collection of [official and communit
 
 ## 💡 Blog Post Ideas
 
-- Cloud software and the decline of charming bugs
+- Cloud software and the death of the charming bug
 
 - Toxic Positivity
 
