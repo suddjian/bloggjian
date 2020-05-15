@@ -6,6 +6,8 @@ _You may want to check out Gatsby's vibrant collection of [official and communit
 
 ## 💡 Blog Post Ideas
 
+- Philosophy of AI and hyper-intelligence: We're bringing forth our own decline as a species and maybe we should just accept that the greatest destiny we could hope for is to create something greater than ourselves.
+
 - Cloud software and the death of the charming bug
 
 - Toxic Positivity
