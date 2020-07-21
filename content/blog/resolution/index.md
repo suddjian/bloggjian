@@ -2,16 +2,21 @@
 title: "Resolution"
 date: "2020-07-00T19:20:00.000Z"
 description: ""
-tags: "life,work,reflection"
+tags: "reflection"
 ---
 
-Life isn't like a story in a book or a movie.
+Been a while, thought I'd write some more.
 
-Stories have beginnings and endings. But beginnings and endings aren't real. They're just a convenience. You can't keep telling a story forever.
+Stories have beginnings and endings. But beginnings and endings aren't real. They're just a convenience. You probably don't want to keep telling a story forever.
 
-So many times, the most important things just sort of... hang there. Unresolved. With nothing you can do.
+Life is different. So many times, the most important story arcs just sort of... hang there. Unresolved.
 
-Sometimes you have to leave something behind. On the outside, walking away looks like an ending, but inside, to the person leaving, it never really ends.
-There's a lingering, active experience of what you've walked away from. Feelings of grief, or relief, or both.
+Sometimes you have to leave something behind. A relationship, a career, a belief. It isn't really en ending. It doesn't get conveniently packaged and tied with a bow.
 
-Perhaps death is like that too. On the outside, it looks like the end, but to the person dying, it just... lingers. Maybe.
+There's a lingering, present experience of what you've left. Feelings of grief, or relief, or both.
+
+The soul can feel the future, and the past, at once. It lives outside of time.
+
+Longing, dread, grief, hope, regret, love, are parts of the same experience.
+
+The challenge of living in the present is that there is so much more past and future to feel.
