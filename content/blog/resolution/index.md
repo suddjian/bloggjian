@@ -1,6 +1,6 @@
 ---
 title: "Resolution"
-date: "2020-07-00T19:20:00.000Z"
+date: "2020-07-20T19:20:00.000Z"
 description: "Been a while, thought I'd write some more."
 tags: "reflection"
 ---
