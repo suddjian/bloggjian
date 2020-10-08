@@ -1,5 +1,5 @@
 ---
-title: "A Blog!"
+title: "Hello Blog!"
 date: "2019-06-24"
 description: "A brief introduction to me, this site and my motivations"
 tags: "announcement"

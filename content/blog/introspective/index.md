@@ -30,17 +30,17 @@ We pretend that we exist for reasons
 
 We pretend that we exist for no reason
 
-And we cope by saying *"someday maybe"*
+And we cope by saying _"someday maybe"_
 
 <br>
 
-We naively hope to break the surface of this great cosmic sea of *yes*
+We naively hope to break the surface of this great cosmic sea of _yes_
 
 To see beneath the roiling conscious foam
 
 Our only tools, impossibly small poorly formed questions
 
-And a strange fleshy *Id* that only knows how to yearn
+And a strange fleshy _Id_ that only knows how to yearn
 
 <br>
 
@@ -48,4 +48,4 @@ Somehow I have gotten so far
 
 Somehow I have gotten nowhere at all
 
-*Someday, maybe*
+_Someday, maybe_

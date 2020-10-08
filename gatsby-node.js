@@ -19,6 +19,7 @@ exports.createPages = ({ graphql, actions }) => {
               }
               frontmatter {
                 title
+                series
               }
             }
           }
@@ -34,8 +35,22 @@ exports.createPages = ({ graphql, actions }) => {
     const posts = result.data.allMarkdownRemark.edges
 
     posts.forEach((post, index) => {
-      const previous = index === posts.length - 1 ? null : posts[index + 1].node
-      const next = index === 0 ? null : posts[index - 1].node
+      const { series } = post.node.frontmatter
+      let next = null
+      for (let i = index - 1; series && i >= 0; i--) {
+        if (posts[i].node.frontmatter.series === series) {
+          next = posts[i].node
+          break
+        }
+      }
+
+      let previous = null
+      for (let i = index + 1; series && i < posts.length; i++) {
+        if (posts[i].node.frontmatter.series === series) {
+          previous = posts[i].node
+          break
+        }
+      }
 
       createPage({
         path: post.node.fields.slug,

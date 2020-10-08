@@ -10,32 +10,25 @@ theme.overrideThemeStyles = ({ rhythm }) => {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
-    "h3": {
+    h3: {
       marginTop: rhythm(-1),
-    }
+      fontWeight: 500,
+    },
   }
 }
 
 theme.googleFonts = [
   {
-    name: 'IBM Plex Sans',
-    styles: [
-      '400',
-      '400i',
-      '500',
-      '500i',
-      '600',
-      '600i',
-      '700',
-      '700i',
-    ],
+    name: "IBM Plex Sans",
+    styles: ["400", "400i", "500", "500i", "600", "600i", "700", "700i"],
   },
 ]
 
-theme.baseFontSize = '16px'
-theme.headerFontFamily = ['Montserrat', 'georgia', 'serif']
+theme.baseLineHeight = "1.5rem"
+theme.baseFontSize = "16px"
+theme.headerFontFamily = ["Montserrat", "georgia", "serif"]
 theme.headerWeight = 700
-theme.bodyFontFamily = ['IBM Plex Sans', 'georgia', 'serif']
+theme.bodyFontFamily = ["IBM Plex Sans", "georgia", "serif"]
 
 const typography = new Typography(theme)
 
