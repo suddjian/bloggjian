@@ -1,11 +1,19 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import styled from "@emotion/styled"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import { LeftArrow, RightArrow } from "../components/decorations"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+
+const Content = styled.div`
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+`
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -14,55 +22,69 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
 
     return (
-      <Layout location={this.props.location} title={siteName}>
-        <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
-        />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(2),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-            marginTop: rhythm(3)
-          }}
-        />
-        <Bio />
+      <Layout>
+        <Layout.Header>
+          <h3
+            style={{
+              fontFamily: `Montserrat, sans-serif`,
+              marginTop: 0,
+            }}
+          >
+            <Link to={`/`}>{siteName}</Link>
+          </h3>
+          <SEO
+            title={post.frontmatter.title}
+            description={post.frontmatter.description || post.excerpt}
+          />
+        </Layout.Header>
+        <Layout.Main>
+          <h1>{post.frontmatter.title}</h1>
+          <p
+            style={{
+              ...scale(-1 / 5),
+              display: `block`,
+              marginBottom: rhythm(2),
+              marginTop: rhythm(-1),
+            }}
+          >
+            {post.frontmatter.date}
+          </p>
+          <Content dangerouslySetInnerHTML={{ __html: post.html }} />
 
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                <LeftArrow />{previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title}<RightArrow />
-              </Link>
-            )}
-          </li>
-        </ul>
+          <div
+            style={{
+              display: `flex`,
+              flexWrap: `wrap`,
+              justifyContent: `space-between`,
+              marginTop: rhythm(2),
+            }}
+          >
+            <div>
+              {previous && (
+                <>
+                  Previous:
+                  <br />
+                  <Link to={previous.fields.slug} rel="prev">
+                    <LeftArrow />
+                    {previous.frontmatter.title}
+                  </Link>
+                </>
+              )}
+            </div>
+            <div>
+              {next && (
+                <>
+                  Next:
+                  <br />
+                  <Link to={next.fields.slug} rel="next">
+                    {next.frontmatter.title}
+                    <RightArrow />
+                  </Link>
+                </>
+              )}
+            </div>
+          </div>
+        </Layout.Main>
       </Layout>
     )
   }

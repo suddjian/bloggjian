@@ -1,6 +1,6 @@
 ---
 title: "Every Moment a Choice"
-date: "2019-08-31T20:30:00.000Z"
+date: "2019-08-31"
 description: "Notes on existing purposefully and the upside of opportunity cost"
 ---
 

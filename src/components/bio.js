@@ -11,7 +11,7 @@ import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
 
-const Bio = () => {
+const Bio = ({ style }) => {
   const data = useStaticQuery(graphql`
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic-2.jpg/" }) {
@@ -24,7 +24,6 @@ const Bio = () => {
       site {
         siteMetadata {
           author
-          authorEmail
           social {
             twitter
           }
@@ -33,19 +32,20 @@ const Bio = () => {
     }
   `)
 
-  const { author, authorEmail } = data.site.siteMetadata
+  const { author } = data.site.siteMetadata
   return (
     <div
       style={{
         display: `flex`,
-        marginBottom: rhythm(1),
+        marginBottom: rhythm(1.5),
+        ...style,
       }}
     >
       <Image
         fixed={data.avatar.childImageSharp.fixed}
         alt={author}
         style={{
-          marginRight: rhythm(1 / 2),
+          marginRight: rhythm(1),
           marginBottom: 0,
           minWidth: 70,
           borderRadius: `100%`,
@@ -56,8 +56,11 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p>
-        Personal blog of <strong>{author}</strong>, a professional web nerd from Santa Cruz building useful things for money and useless things for fun.
+      <p style={{ margin: 0 }}>
+        Hi, I'm Aaron. I'm a programmer from California. I work on nerdy web
+        stuff at some startup. I like to learn and write and watch weird movies
+        and make things. Currently hunkering down to do my part in a pandemic,
+        working on bettering myself through learning and personal projects.
       </p>
     </div>
   )
