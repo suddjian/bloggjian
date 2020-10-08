@@ -1,8 +1,9 @@
 ---
 title: "Ranked Voting App: Part 0"
-date: "2020-10-06T21:30:00.000Z"
+date: "2020-10-06"
 description: "Plotting to build a Ranked Choice Voting web app with VanillaJS and Firebase"
-tags: "vote-app, programming"
+tags: "programming"
+series: "vote-app"
 ---
 
 ## Indecision and Voting
@@ -11,7 +12,7 @@ At my house, we have a strange tradition of indecision.
 We will debate the merits of five movies, games, or dinner choices for half an hour or more.
 Everyone knows that no one really minds any of the options. But we stress about it anyway.
 Putting it up to a vote feels overly stressful: none of us want to force anyone else into something they don't want.
-So eventually, we cautiously agree on something to do together. 
+So eventually, we cautiously agree on something to do together.
 It's all very silly, but it's what we do.
 
 One day we realized - wait, there are many different voting methods!
@@ -23,48 +24,61 @@ The simplest voting method is the first one most think of: "First Past the Post"
 Everyone votes for one candidate, and whichever candidate gets the most votes wins.
 This method is very easy to do, but produces some social stress from not wanting to choose something someone in the group doesn't want.
 
-The next up option, so to speak, is Ranked Choice voting.
+A common alternative to First Past the Post is Ranked Choice voting.
 With Ranked Choice, voters rank the candidates from most desireable to least desirable.
+This system is designed to find a candidate that more than half the voters find "acceptable".
+You can safely vote for your favorite candidate first, and your less-favorites second, while avoiding a spoiler effect.
 Determinging the result actually involves multiple rounds.
-First you tally up the votes for everyone's first choice. Then eliminate whichever candidate got the fewest "first choice" votes.
+First you tally up the votes for everyone's first choice.
+Then eliminate whichever candidate got the fewest "first choice" votes.
 Then do a re-count, but any time you see the candidate who has been eliminated, you count that voter's second choice instead.
 Continue eliminating the least popular candidate and counting those voters' next choice until one candidate has more than half the votes.
 That candidate wins!
-
-Ranked Choice voting is much fairer - it considers people's second, third etc. options -
-but it is not very convenient for a casual vote. Let's write some code and make it easier:
 
 ```
 TODO write ranked choice code
 ```
 
-In certain scenarios, a Ranked Choice Voting outcome can still feel unfair. Let's look at an example:
+In certain scenarios, a Ranked Choice Voting outcome can still lead to non-optimal results. Let's look at an example:
 
-It's game night and the candidates are Risk, Bang, Pictionary, and Munchkin.
-The voters are Fen, Van, Nima, Raj, and May.
+It's game night and the candidates are Risk, Bang, Pictionary, Hearts, and Munchkin.
+The voters are Fen, Van, Nima, Raj, Wash, and May.
 
-The ballots are:
+The ranked voter preferences are:
+
 Fen: Risk, Bang, Munchkin
+
 Van: Risk, Bang, Munchkin
-Nima: Munchkin, Bang, Risk
+
+Nima: Munchkin, Bang
+
 Raj: Munchkin, Bang, Pictionary
-May: Bang, Pictionary, Risk
 
-In this example, Bang is everyone's first or second choice. It's clearly the best option. But Bang gets eliminated in the first round.
-The win goes to Pizza, even though it clearly is not as preferred by the whole group as salad.
+Wash: Pictionary, Bang, Risk
 
-There are many other voting strategies. This video explains various voting methods in quite a bit more detail.
-There's a whole fascinating field of voting methods out there to nerd out with!
+May: Bang, Hearts, Risk
+
+Looking at this, I think you'll agree the clear egalitarian choice is Bang. It is everyone's first or second choice, and there is no clear consensus on first choices. But let's look at how things get counted
+
+Round 1: Bang and Pictionary are tied for last place. How this gets resolved depends on the details of your algorithm. We'll say that Bang arbitrarily gets eliminated first.
+
+Round 2: Recount! May's second choice of Hearts is counted this time, since Bang has been eliminated. Now Pictionary and Hearts are tied for last place. Let's say Pictionary gets eliminated this time.
+
+Round 3: Recount again! Wash's first and second choices have both been eliminated, so now his third choice of Risk is counted. Hearts is in last place and gets eliminated. Risk now has exactly 50% of the vote, not quite enough to win.
+
+Round 4: Last recount! This time May's third choice is counted, which again is Risk. Risk has four votes and wins the election.
+
+The issue here is that our Ranked Choice algorithm eliminates candidates without considering how that candidate might perform after other candidates' eliminations. If May had ranked Bang second instead of first, it might have won. This is annoying! How can we fix this?
 
 ## The Project
 
 I'll be building a webapp with the following features:
 
- - Create a poll/election (I can't decide what I want to call them)
- - Send a url for the poll/election to others
- - Everyone ranks their preferred candidates
- - Display the results to everyone
- - Make sure it is really convenient to use
+- Create a poll/election (I can't decide what I want to call them)
+- Send a url for the poll/election to others
+- Everyone ranks their preferred candidates
+- Display the results to everyone
+- Make sure it is really convenient to use
 
 There are loads more bonuses that I think would be interesting to add on, but those items are what I'm gonna focus on to start.
 No scope creep allowed until after!
