@@ -57,9 +57,9 @@ const Bio = ({ style }) => {
         }}
       />
       <p style={{ margin: 0 }}>
-        I'm Aaron. I'm a programmer from California. I work on nerdy web stuff
-        at some startup. I like to learn and write and watch weird movies and
-        make things. Currently hunkering down to do my part in a pandemic,
+        Hi, I'm Aaron. I'm a programmer from California. I work on nerdy web
+        stuff at some startup. I like to learn and write and watch weird movies
+        and make things. Currently hunkering down to do my part in a pandemic,
         working on bettering myself through learning and personal projects.
       </p>
     </div>
