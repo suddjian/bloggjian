@@ -27,7 +27,7 @@ class BlogPostTemplate extends React.Component {
           <h3
             style={{
               fontFamily: `Montserrat, sans-serif`,
-              marginTop: 0,
+              marginTop: rhythm(1),
             }}
           >
             <Link to={`/`}>{siteName}</Link>
