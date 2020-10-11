@@ -1,103 +1,89 @@
 ---
-title: "Ranked Voting App: Part 0"
+title: "Building a Ranked Voting App from Scratch"
 date: "2020-10-06"
-description: "Plotting to build a Ranked Choice Voting web app with VanillaJS and Firebase"
+description: "Building a web-app to run fair elections between friends, using Firebase and Vanilla JS"
 tags: "programming"
 series: "vote-app"
 ---
 
-## Indecision and Voting
+## Motivation: Social Indecision
 
 At my house, we have a strange tradition of indecision.
-We will debate the merits of five movies, games, or dinner choices for half an hour or more.
-Everyone knows that no one really minds any of the options. But we stress about it anyway.
-Putting it up to a vote feels overly stressful: none of us want to force anyone else into something they don't want.
-So eventually, we cautiously agree on something to do together.
-It's all very silly, but it's what we do.
+Come game night, movie night, or any other group activity, we will sit and browse and debate the options for what feels like ages.
+Do we want to watch an action movie, horror, drama, comedy? Which one?
+Everyone knows that no one really minds any of the options. But indecision reigns, regardless.
+Eventually, after much deliberation, we finally agree on something to do together.
+It's all very silly.
 
-One day we realized - wait, there are many different voting methods!
-Maybe one of them will be a good option for resolving these disputes. I did some investigating...
+Sometimes we consider putting it up to a vote, but that always feels overly beuraucratic.
+There are so many options that even if we did, the vote would likely be split.
+But I've learned a lot about alternative voting systems, and I think one of them may be
+a good option for resolving these disputes.
 
-Oh by the way, if you already know all about all kinds of voting methods? Skip to [The Project](#the-project).
+So I've decided to build a web app for us!
+I can create something useful while honing my craft, experimenting with a new app stack, and writing about it.
 
-The simplest voting method is the first one most think of: "First Past the Post".
-Everyone votes for one candidate, and whichever candidate gets the most votes wins.
-This method is very easy to do, but produces some social stress from not wanting to choose something someone in the group doesn't want.
+## Voting Methodologies
 
-A common alternative to First Past the Post is Ranked Choice voting.
-With Ranked Choice, voters rank the candidates from most desireable to least desirable.
-This system is designed to find a candidate that more than half the voters find "acceptable".
-You can safely vote for your favorite candidate first, and your less-favorites second, while avoiding a spoiler effect.
-Determinging the result actually involves multiple rounds.
-First you tally up the votes for everyone's first choice.
-Then eliminate whichever candidate got the fewest "first choice" votes.
-Then do a re-count, but any time you see the candidate who has been eliminated, you count that voter's second choice instead.
-Continue eliminating the least popular candidate and counting those voters' next choice until one candidate has more than half the votes.
-That candidate wins!
+The first voting method that comes to mind for most people is "First Past the Post".
+Each voter chooses one candidate, and whichever candidate gets the most votes wins.
+But the candidate receiving the most votes could be a candidate that everyone else really doesn't want.
+There isn't a way to express "I want this, but I would also be okay with this".
 
-```
-TODO write ranked choice code
-```
+Enter [Ranked Choice](https://en.wikipedia.org/wiki/Instant-runoff_voting) voting.
+Each voter ranks the candidates from most preferred to least.
+When counting, you iteratively eliminate the least-preferred candidate from the pack;
+You then take voters' second, third, etc. preferences into account until one candidate has a majority.
+This method can have... unintuitive results.
+Let's say we are deciding what to eat. Everyone in the group has a different first choice,
+but everyone's second choice is Pizza. Pizza is the clear best choice for a winner.
+But Pizza will get eliminated in the first round since it's nobody's first choice.
+Ranked Choice voting is designed for elections on a national scale, where this isn't as much of a problem.
 
-In certain scenarios, a Ranked Choice Voting outcome can still lead to non-optimal results. Let's look at an example:
+And so we come to Condorcet Voting.
 
-It's game night and the candidates are Risk, Bang, Pictionary, Hearts, and Munchkin.
-The voters are Fen, Van, Nima, Raj, Wash, and May.
+A [Condorcet Method](https://en.wikipedia.org/wiki/Condorcet_method) is a ranked-choice election
+designed to find an egalitarian "most-preferred" candidate.
+This is done by taking all voters' ranked preferences, and simulating 1v1 elections between each pair of candidates.
+There are actually many methods to determine the winner, all with slightly different properties.
+It can get quite complicated, but the gist is that the candidate preferred the most overall is the winner.
+This will work very well for my app.
+A wealth of election nerditude awaits on the other side of the link above, for the daring reader.
 
-The ranked voter preferences are:
+I have selected the [Ranked Pairs](https://en.wikipedia.org/wiki/Ranked_pairs) method,
+for its polynomial runtime complexity and various other desirable properties.
 
-Fen: Risk, Bang, Munchkin
-
-Van: Risk, Bang, Munchkin
-
-Nima: Munchkin, Bang
-
-Raj: Munchkin, Bang, Pictionary
-
-Wash: Pictionary, Bang, Risk
-
-May: Bang, Hearts, Risk
-
-Looking at this, I think you'll agree the clear egalitarian choice is Bang. It is everyone's first or second choice, and there is no clear consensus on first choices. But let's look at how things get counted
-
-Round 1: Bang and Pictionary are tied for last place. How this gets resolved depends on the details of your algorithm. We'll say that Bang arbitrarily gets eliminated first.
-
-Round 2: Recount! May's second choice of Hearts is counted this time, since Bang has been eliminated. Now Pictionary and Hearts are tied for last place. Let's say Pictionary gets eliminated this time.
-
-Round 3: Recount again! Wash's first and second choices have both been eliminated, so now his third choice of Risk is counted. Hearts is in last place and gets eliminated. Risk now has exactly 50% of the vote, not quite enough to win.
-
-Round 4: Last recount! This time May's third choice is counted, which again is Risk. Risk has four votes and wins the election.
-
-The issue here is that our Ranked Choice algorithm eliminates candidates without considering how that candidate might perform after other candidates' eliminations. If May had ranked Bang second instead of first, it might have won. This is annoying! How can we fix this?
+A Condorcet algorithm will allow the app to be as fair as possible to everyone when counting the ranked votes.
 
 ## The Project
 
 I'll be building a webapp with the following features:
 
 - Create a poll/election (I can't decide what I want to call them)
-- Send a url for the poll/election to others
+- Generate a link for the poll/election to send to others
 - Everyone ranks their preferred candidates
+- Calculate a Condorcet Winner (using Ranked Pairs)
 - Display the results to everyone
 - Make sure it is really convenient to use
 
 There are loads more bonuses that I think would be interesting to add on, but those items are what I'm gonna focus on to start.
 No scope creep allowed until after!
 
-## Plans
-
-I want the frontend to behave as a client application, interfacing with a client-agnostic backend service.
+I want to build the frontend as a client application, interfacing with a client-agnostic backend service.
 This will allow me the most flexibility to build this app into multiple different platforms down the line:
 Web, mobile, CLI, Slack, and Discord apps can all interface with the same API.
 To start though, I will just be building a webapp.
 
-I will use modern ECMAScript and browser APIs directly, without a build process, without libraries in-between.
+I will use modern JS and browser APIs directly, without a build process, without libraries in-between.
 The idea is to simply write the code that gets delivered to the browser.
-Modern browser standards are so well supported now, and my hypothesis is that you don't actually need additional tools to get the job done.
+Modern browser standards are so well supported now, my hypothesis is that you don't actually need additional tools to get the job done.
 I'm going to use this project to test that idea.
 
 I'm going to use Firebase for data storage, real-time updates, authentication, and access control.
 Firebase is one of the better designed "backend as a service" options out there,
 but I haven't yet used it in-depth yet so we'll see how that goes.
-I'd also be interested in open-source, self-hosted options that serve the same role as Firebase.
+Ideally I won't have to code any backend services, except for maybe a couple cloud functions!
+I'd also be interested in open-source, self-hosted options that serve the same role as Firebase, but I haven't found any yet.
 
-I will document the process via a series of posts, published here. This will be fun!
+I will document the process via a series of posts, published here.
+In the next post we'll be implementing the vote counting library. Let's gooooo!
