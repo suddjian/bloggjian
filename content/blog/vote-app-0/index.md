@@ -16,7 +16,7 @@ Everyone involved acknowledges that no one really minds any of the options.
 But indecision reigns, regardless. It's all very silly.
 
 Putting it to a vote always feels overly beuraucratic.
-And besides, there are so many options that the vote would likely be split.
+And besides, when there are many options the vote would likely be split.
 But I've learned a lot about alternative voting systems, and there's one that may be
 a good option for resolving these disputes. But it's complicated to administer:
 You have to build a matrix of votes and do pairwise evaluation of each permutation of choices.
@@ -50,14 +50,14 @@ My hypothesis is that modern JS has advanced enough to get the job done without 
 As long as you don't care too much about compatibility with legacy browsers, that is.
 I'm going to use this project to test that hypothesis.
 
-I'm going to use [Firebase](https://firebase.google.com/) for data storage, hosting, real-time updates, authentication, and access control.
+I've chosen [Firebase](https://firebase.google.com/) for data storage, hosting, real-time updates, authentication, and access control.
 Firebase is one of the better designed "backend as a service" options out there,
 but I haven't used it in-depth yet so we'll see how that goes.
 Ideally I won't have to write any code for the backend, except for access rules and maybe a couple cloud functions!
 And thanks to Firebase's generous free tier, this should be completely free for me to run.
 I've looked for open-source, self-hosted options that serve the same role as Firebase, but I haven't found any yet.
 
-I will document this project in a detailed series of posts, published here.
+I will document this project in a detailed series of articles.
 
 ## Voting Methodologies
 
@@ -90,4 +90,4 @@ This method is quite egalitarian and will work very well for my app.
 I have selected the [Ranked Pairs](https://en.wikipedia.org/wiki/Ranked_pairs) Condorcet Method,
 for various desirable properties including polynomial runtime complexity.
 
-More on that in the next post, where we'll be implementing the vote counting algorithm. Let's gooooo!
+More on that in the next post, where I'll implement the vote counting algorithm and publish it to npm. Let's gooooo!
