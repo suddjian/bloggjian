@@ -52,6 +52,8 @@ _You may want to check out Gatsby's vibrant collection of [official and communit
 
 - Working on open-source for free is usually not the best way to spend your time
 
+- "Should" is poison
+
 ## 🚀 Quick start
 
 Navigate into the site’s directory and start it up.
