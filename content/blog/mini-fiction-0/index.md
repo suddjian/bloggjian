@@ -1,5 +1,5 @@
 ---
-title: "A Tale of Machine Consciousness"
+title: "Artifical Consciousness Micro-Fiction"
 date: "2019-05-21"
 description: "In which I try my hand at a bit of sci-fi writing"
 series: "short-stories"
